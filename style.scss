@@ -23,7 +23,40 @@
     height: 100%;
     background: center/ cover no-repeat url("./img/header__bg.jpg");
     opacity: 0.44;
+  }
 
+  &__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  &__text{
+    width: 786px;
+    color: #ffffff;
+    text-align: center;
+
+    h1{
+      padding: 10px;
+      font-weight: 700;
+      font-size: 74px;
+      line-height: 84px;
+      letter-spacing: 0.2px;
+    }
+
+    p{
+      margin-top: 7px;
+      padding: 10px;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 40px;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  &__button{
+    margin-top: 80px;
   }
 }
 
@@ -90,4 +123,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn{
+  padding: 16px 62px;
+  border-radius: 35px;
+  text-decoration: none;
+  &_default{
+    color: #ffffff;
+    background: #2091F9;
+  }
 }
