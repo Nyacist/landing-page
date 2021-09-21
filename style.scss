@@ -6,7 +6,50 @@
 
 .container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  max-width: 552px;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  text-align: center;
+
+  &__description{
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.btn{
+  padding: 16px 62px;
+  border-radius: 35px;
+  text-decoration: none;
+
+  &_default{
+    color: #ffffff;
+    background: #2091F9;
+  }
+
+  &_play{
+    width: 187px;
+    height: 187px;
+    background: url("./img/play-button.svg");
+    border: none;
+  }
 }
 
 .header {
@@ -119,18 +162,81 @@
 
 }
 
-.logo {
+.features{
+  padding-top: 112px;
+  padding-bottom: 52px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-}
 
-.btn{
-  padding: 16px 62px;
-  border-radius: 35px;
-  text-decoration: none;
-  &_default{
-    color: #ffffff;
-    background: #2091F9;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    max-width: 869px;
+    margin: 80px auto;
+  }
+
+  &__item{
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-image{
+      height: 61px;
+      width: 61px;
+    }
+
+    &-title{
+      margin: 10px 16px;
+      padding: 10px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.1px;
+      text-align: center;
+      color: #252B42;
+    }
+    &:nth-child(2){
+      .features__item-title{
+        margin: 10px auto;
+      }
+    }
+
+    &-text{
+      padding: 0 10px;
+      text-align: center;
+      color: #374754;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  &__video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 658px;
+
+    &-screen{
+      width: 82%;
+      height: 100%;
+      overflow: hidden;
+      filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+      border-radius: 45px;
+      position: absolute;
+      z-index: -1;
+      img{
+        position: absolute;
+        top: -52px;
+        width: 100%;
+      }
+    }
+
   }
 }
+
